@@ -10,7 +10,15 @@
 
 import React from 'react';
 import {Main} from '@src/screens/Main';
+import {NativeBaseProvider, Box} from 'native-base';
 
 export const App = () => {
-  return <Main />;
+  // return <Main />;
+  return (
+    <NativeBaseProvider>
+      <Box>
+        <Main />
+      </Box>
+    </NativeBaseProvider>
+  );
 };
