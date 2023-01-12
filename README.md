@@ -26,8 +26,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://docs.ozon.ru/company/images/logo_Ozon_new.png" alt="Logo" width="150" >
+  <a href="https://github.com/viktorinasmi/OzonCopy">
+    <img src="./README/logo_Ozon_new.png" alt="Logo" width="150" >
   </a>
 
 <h3 align="center">Ozon copy</h3>
@@ -41,9 +41,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+<p float="left" align="middle">
 <img height="350" src="./README/android.png"/>
 <img height="350" src="./README/ios.png"/>
+</p>
+
 
 
 
