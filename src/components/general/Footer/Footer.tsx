@@ -36,10 +36,10 @@ export const Footer = () => {
             <MaterialIcons
               name={item.icon}
               size={30}
-              color={id === 0 ? '#4539FA' : '#525D6F'}
+              color={id === 0 ? '#005bff' : '#525D6F'}
               style={{textAlign: 'center'}}
             />
-            <Text color={id === 0 ? '#4539FA' : '#525D6F'}>{item.title}</Text>
+            <Text color={id === 0 ? '#005bff' : '#525D6F'}>{item.title}</Text>
           </View>
         ))}
       </HStack>

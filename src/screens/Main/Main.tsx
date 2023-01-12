@@ -1,26 +1,28 @@
 import styles from './Main.styles';
 import React from 'react';
-import {SafeAreaView, Button} from 'react-native';
 import {UI_BACKGROUND} from '@src/styles';
-import {Header} from '@src/components/general/Header';
+import {Header} from '@src/components/general/Header/';
 import {Footer} from '@src/components/general/Footer/index';
 import {ScrollView, Box, View, Image, Text} from 'native-base';
-import {Heading} from 'native-base';
+import {Heading, Button} from 'native-base';
 import {products} from '@src/data/products';
 
 export const Main = () => {
   return (
-    <SafeAreaView style={{backgroundColor: UI_BACKGROUND}}>
+    <View style={{flex: 1, backgroundColor: UI_BACKGROUND}}>
       <Header />
-      {/*<View style={{flex: 1}}>*/}
       <ScrollView>
         <Box style={{marginTop: 10}} p={5}>
           <Heading size={'lg'} color="#111">
             Успей купить!
           </Heading>
-          <View mt={10}>
+          <View
+            mt={10}
+            flexDirection="row"
+            flexWrap="wrap"
+            justifyContent="space-between">
             {products.map((product, id) => (
-              <Box key={id}>
+              <View key={id} mb={10} mx={2} w="26%" alignItems="center">
                 <Image
                   size="md"
                   resizeMode="cover"
@@ -33,17 +35,25 @@ export const Main = () => {
                     currency: 'RUB',
                   })}
                 </Text>
-                <Text>{product.name}</Text>
-                <Box style={{backgroundColor: '#4539FA', borderRadius: 10}}>
-                  <Button title="В корзину" color="#fff" />
+                <Text style={{fontSize: 14, height: 40}}>{product.name}</Text>
+                <Box style={{width: 120, marginTop: 20}} px={2} py={2}>
+                  <Button backgroundColor="#005bff" borderRadius={8}>
+                    <Text
+                      style={{
+                        color: '#fff',
+                        fontWeight: 'bold',
+                        fontSize: 14,
+                      }}>
+                      В корзину
+                    </Text>
+                  </Button>
                 </Box>
-              </Box>
+              </View>
             ))}
           </View>
         </Box>
       </ScrollView>
       <Footer />
-      {/*</View>*/}
-    </SafeAreaView>
+    </View>
   );
 };

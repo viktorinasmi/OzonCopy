@@ -10,15 +10,16 @@
 
 import React from 'react';
 import {Main} from '@src/screens/Main';
-import {NativeBaseProvider, Box} from 'native-base';
+import {NativeBaseProvider} from 'native-base';
+import {SafeAreaView} from 'react-native';
 
 export const App = () => {
   // return <Main />;
   return (
     <NativeBaseProvider>
-      <Box>
+      <SafeAreaView style={{flex: 1}}>
         <Main />
-      </Box>
+      </SafeAreaView>
     </NativeBaseProvider>
   );
 };
