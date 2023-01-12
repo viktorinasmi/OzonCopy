@@ -42,8 +42,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p float="left" align="middle">
-<img height="350" src="./README/android.png"/>
-<img height="350" src="./README/ios.png"/>
+<img height="750" src="./README/android.png"/>
+<img height="750" src="./README/ios.png"/>
 </p>
 
 
